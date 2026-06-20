@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Father's Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+    <div class="background">
+        <div class="bg-border outer"></div>
+        <div class="bg-border middle"></div>
+        <div class="bg-border inner"></div>
+    </div>
+    <div class="container" id="container">
+
+        <!-- ENVELOPE -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+
+            <!-- CARD (Inside Envelope initially) -->
+            <div class="card-wrapper" id="cardWrapper">
+                <div class="book" id="book">
+
+                    <!-- LEAF 1: Front Cover & Inner Left Page -->
+                    <div class="leaf leaf-1" id="leaf1">
+                        <!-- Front Cover (Page 1) -->
+                        <div class="face face-front cover-front">
+                            <div class="content">
+                                <h1>Happy Father's Day!</h1>
+                                <p class="message">To the most amazing Papa...</p>
+                                <img src="assets/smiley.png" height="200px" width="200px" class="cover-decor" alt="smiley">
+                            </div>
+                            <div class="click-hint bottom-right" id="openCardHint">Open</div>
+                        </div>
+                        <!-- Inner Left (Page 2) -->
+                        <div class="face face-back page-2">
+                            <div class="content">
+                                <div class="image-placeholder crayon-border">
+                                    <img src="assets/pic3.jpeg" class="user-photo" alt="Photo 1">
+                                </div>
+                                <div class="image-placeholder crayon-border alt">
+                                    <img src="assets/pic4.jpeg" class="user-photo" alt="Photo 2" style="object-position: center 25%;">
+                                </div>
+                            </div>
+                            <div class="click-hint bottom-left" id="closeCardHint">Back</div>
+                        </div>
+                    </div>
+
+                    <!-- LEAF 2: Inner Right Page & Back Cover -->
+                    <div class="leaf leaf-2" id="leaf2">
+                        <!-- Inner Right (Page 3) -->
+                        <div class="face face-front page-3">
+                            <div class="content">
+                                <h2 class="large-message">Thank you for<br>all the blessings<br>you have showered on me
+                                    !!</h2>
+                                <p class="message">I love you so much</p>
+                                <p class="message">Always !!</p>
+                            </div>
+                            <div class="click-hint bottom-right" id="nextCardHint">Next</div>
+                        </div>
+                        <!-- Back Cover (Page 4) -->
+                        <div class="face face-back cover-back">
+                            <div class="content">
+                                <h2 class="large-message">I hope you liked it !</h2>
+                            </div>
+                            <div class="click-hint bottom-left" id="backToSpreadHint">Back</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Envelope Front and Flap -->
+            <div class="envelope-front">
+                <img src="assets/envelope_decor.png" class="envelope-decor" alt="envelope decoration">
+            </div>
+            <div class="envelope-flap" id="envelopeFlap">
+                <div class="flap-triangle"></div>
+                <div class="flap-triangle-inner"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
